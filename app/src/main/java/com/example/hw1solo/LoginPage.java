@@ -22,6 +22,8 @@ public class LoginPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page);
 
+
+
         userNameInput = (EditText) findViewById(R.id.userNameInput);
         String username = userNameInput.getText().toString();
 
