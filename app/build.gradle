@@ -34,9 +34,17 @@ dependencies {
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.google.android.material:material:1.1.0'
+
+    /*I just want to say that this took me around 4 hours to find the right gradle for retrofit.
+    *It took me a while but I found a video https://youtu.be/AILgGgMlsyM?t=68 that showed me how to do it.
+    *
+    * I might have added one too many but I am honestly too scared to even
+    * touch them for fear of my program breaking.
+    * */
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

@@ -52,11 +52,12 @@ public class LoginPage extends AppCompatActivity {
 
 
 
-        /* Retrofit code was used from tutorial on how to install retrofit.*/
+        /* Retrofit code from 55 - 87 was used from tutorial on how to install retrofit.*/
         Retrofit jsonApi = new Retrofit.Builder()
                 .baseUrl("https://jsonplaceholder.typicode.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
+
 
         JsonPlaceHolderApi jsonPlaceHolderApi = jsonApi.create(JsonPlaceHolderApi.class);
         Call<List<Post>> call = jsonPlaceHolderApi.getPosts();
@@ -73,11 +74,11 @@ public class LoginPage extends AppCompatActivity {
                 for (Post post : posts) {
                     fromInternet += "ID: " + post.getId() + "\n";
                     fromInternet += "User ID: " + post.getUserId() + "\n";
-                    fromInternet += "Title: " + post.getTitle() + "\n";
                     fromInternet += "Text: " + post.getText() + "\n\n";
                     textViewResult.append(fromInternet);
                 }
             }
+
             @Override
             public void onFailure(Call<List<Post>> call, Throwable t) {
                 textViewResult.setText(t.getMessage());
@@ -105,12 +106,11 @@ public class LoginPage extends AppCompatActivity {
 
     /*checkBlank: It prevents the user from pressing button to landing page by greying it
      *out. Only if the fields are open will the button be available to be clicked.
+     *
      * */
     private TextWatcher checkBlank = new TextWatcher() {
         @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-        }
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
@@ -122,9 +122,7 @@ public class LoginPage extends AppCompatActivity {
         }
 
         @Override
-        public void afterTextChanged(Editable s) {
-
-        }
+        public void afterTextChanged(Editable s) {}
     };
 
 

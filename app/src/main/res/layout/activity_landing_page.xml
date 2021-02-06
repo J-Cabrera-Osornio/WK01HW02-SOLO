@@ -15,7 +15,7 @@
         android:layout_marginTop="280dp"
         android:layout_marginEnd="139dp"
         android:layout_marginBottom="224dp"
-        android:text="Logged In"
+        android:text="Login Success. Welcome!"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
