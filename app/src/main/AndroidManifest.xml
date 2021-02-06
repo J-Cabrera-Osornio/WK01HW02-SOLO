@@ -3,6 +3,7 @@
     package="com.example.hw1solo">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HW1SOLO">
-        <activity android:name=".LandingPage"></activity>
+        <activity android:name=".ErrorPage"></activity>
+        <activity android:name=".LandingPage" />
         <activity android:name=".LoginPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
